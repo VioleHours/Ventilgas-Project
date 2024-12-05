@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js,tsx,ts}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        waves: "url('src/assets/nav/bg-hero-nav.webp')",
+      },
+      colors: {
+        "custom-blue": "#002064",
+      },
+    },
   },
   plugins: [],
-}
-
+};
